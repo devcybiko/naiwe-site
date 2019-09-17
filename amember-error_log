@@ -1,0 +1,1000 @@
+                                                            [ignoreFields:protected] => Array
+                                                                (
+                                                                )
+
+                                                            [fields:protected] => Array
+                                                                (
+                                                                )
+
+                                                            [callbacks:protected] => Array
+                                                                (
+                                                                )
+
+                                                        )
+
+                                                    [_customFieldsConfigKey:protected] => 
+                                                    [_db:protected] => Am_Db Object
+                                                        (
+                                                            [PDO] => PDO Object
+                                                                (
+                                                                )
+
+                                                            [_identPrefix:protected] => am_
+                                                            [_statistics:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                    [time] => 0.18969798088074
+                                                                    [count] => 68
+                                                                )
+
+                                                            [_cachePrefix:DbSimple_Generic_Database:private] => 
+                                                            [_logger:DbSimple_Generic_Database:private] => 
+                                                            [_cacher:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderArgs:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNativeArgs:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderCache:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNoValueFound:DbSimple_Generic_Database:private] => 
+                                                            [MAX_LOG_ROW_LEN:DbSimple_Generic_Database:private] => 128
+                                                            [error] => 
+                                                            [errmsg] => 
+                                                            [showStack:DbSimple_Generic_LastError:private] => 
+                                                            [errorHandler:DbSimple_Generic_LastError:private] => Array
+                                                                (
+                                                                    [0] => Am_Db
+                                                                    [1] => defaultDatabaseErrorHandler
+                                                                )
+
+                                                            [ignoresInTraceRe:DbSimple_Generic_LastError:private] => DbSimple_.*::.* | call_user_func.*
+                                                            [attributes] => Array
+                                                                (
+                                                                )
+
+                                                            [_lastQuery] => Array
+                                                                (
+                                                                    [0] => SELECT * FROM ?_integration WHERE ?# IN (?a)
+                                                                    [1] => integration_id
+                                                                    [2] => Array
+                                                                        (
+                                                                            [0] => 1
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                    [_keyIsInt:protected] => 1
+                                                    [_di:Am_Table:private] => Am_Di Object
+ *RECURSION*
+                                                    [useCache:protected] => 
+                                                    [cache:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [_checkUnique] => 
+                                                )
+
+                                            [affCommissionRuleTable] => AffCommissionRuleTable Object
+                                                (
+                                                    [_key:protected] => rule_id
+                                                    [_table:protected] => ?_aff_commission_rule
+                                                    [_recordClass:protected] => AffCommissionRule
+                                                    [rulesCache:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [_db:protected] => Am_Db Object
+                                                        (
+                                                            [PDO] => PDO Object
+                                                                (
+                                                                )
+
+                                                            [_identPrefix:protected] => am_
+                                                            [_statistics:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                    [time] => 0.18969798088074
+                                                                    [count] => 68
+                                                                )
+
+                                                            [_cachePrefix:DbSimple_Generic_Database:private] => 
+                                                            [_logger:DbSimple_Generic_Database:private] => 
+                                                            [_cacher:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderArgs:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNativeArgs:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderCache:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNoValueFound:DbSimple_Generic_Database:private] => 
+                                                            [MAX_LOG_ROW_LEN:DbSimple_Generic_Database:private] => 128
+                                                            [error] => 
+                                                            [errmsg] => 
+                                                            [showStack:DbSimple_Generic_LastError:private] => 
+                                                            [errorHandler:DbSimple_Generic_LastError:private] => Array
+                                                                (
+                                                                    [0] => Am_Db
+                                                                    [1] => defaultDatabaseErrorHandler
+                                                                )
+
+                                                            [ignoresInTraceRe:DbSimple_Generic_LastError:private] => DbSimple_.*::.* | call_user_func.*
+                                                            [attributes] => Array
+                                                                (
+                                                                )
+
+                                                            [_lastQuery] => Array
+                                                                (
+                                                                    [0] => SELECT * FROM ?_integration WHERE ?# IN (?a)
+                                                                    [1] => integration_id
+                                                                    [2] => Array
+                                                                        (
+                                                                            [0] => 1
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                    [_keyIsInt:protected] => 1
+                                                    [_di:Am_Table:private] => Am_Di Object
+ *RECURSION*
+                                                    [useCache:protected] => 
+                                                    [cache:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [_checkUnique] => 
+                                                )
+
+                                            [accessTable] => AccessTable Object
+                                                (
+                                                    [_key:protected] => access_id
+                                                    [_table:protected] => ?_access
+                                                    [_recordClass:protected] => Access
+                                                    [_customFields:protected] => Am_CustomFieldsManager Object
+                                                        (
+                                                            [ignoreFields:protected] => Array
+                                                                (
+                                                                )
+
+                                                            [fields:protected] => Array
+                                                                (
+                                                                )
+
+                                                            [callbacks:protected] => Array
+                                                                (
+                                                                )
+
+                                                        )
+
+                                                    [_customFieldsConfigKey:protected] => 
+                                                    [_db:protected] => Am_Db Object
+                                                        (
+                                                            [PDO] => PDO Object
+                                                                (
+                                                                )
+
+                                                            [_identPrefix:protected] => am_
+                                                            [_statistics:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                    [time] => 0.18969798088074
+                                                                    [count] => 68
+                                                                )
+
+                                                            [_cachePrefix:DbSimple_Generic_Database:private] => 
+                                                            [_logger:DbSimple_Generic_Database:private] => 
+                                                            [_cacher:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderArgs:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNativeArgs:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderCache:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNoValueFound:DbSimple_Generic_Database:private] => 
+                                                            [MAX_LOG_ROW_LEN:DbSimple_Generic_Database:private] => 128
+                                                            [error] => 
+                                                            [errmsg] => 
+                                                            [showStack:DbSimple_Generic_LastError:private] => 
+                                                            [errorHandler:DbSimple_Generic_LastError:private] => Array
+                                                                (
+                                                                    [0] => Am_Db
+                                                                    [1] => defaultDatabaseErrorHandler
+                                                                )
+
+                                                            [ignoresInTraceRe:DbSimple_Generic_LastError:private] => DbSimple_.*::.* | call_user_func.*
+                                                            [attributes] => Array
+                                                                (
+                                                                )
+
+                                                            [_lastQuery] => Array
+                                                                (
+                                                                    [0] => SELECT * FROM ?_integration WHERE ?# IN (?a)
+                                                                    [1] => integration_id
+                                                                    [2] => Array
+                                                                        (
+                                                                            [0] => 1
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                    [_keyIsInt:protected] => 1
+                                                    [_di:Am_Table:private] => Am_Di Object
+ *RECURSION*
+                                                    [useCache:protected] => 
+                                                    [cache:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [_checkUnique] => 
+                                                )
+
+                                            [productTable] => ProductTable Object
+                                                (
+                                                    [_key:protected] => product_id
+                                                    [_table:protected] => ?_product
+                                                    [_recordClass:protected] => Product
+                                                    [useCache:protected] => 1
+                                                    [_customFields:protected] => Am_CustomFieldsManager Object
+                                                        (
+                                                            [ignoreFields:protected] => Array
+                                                                (
+                                                                )
+
+                                                            [fields:protected] => Array
+                                                                (
+                                                                )
+
+                                                            [callbacks:protected] => Array
+                                                                (
+                                                                )
+
+                                                        )
+
+                                                    [_customFieldsConfigKey:protected] => 
+                                                    [_db:protected] => Am_Db Object
+                                                        (
+                                                            [PDO] => PDO Object
+                                                                (
+                                                                )
+
+                                                            [_identPrefix:protected] => am_
+                                                            [_statistics:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                    [time] => 0.18969798088074
+                                                                    [count] => 68
+                                                                )
+
+                                                            [_cachePrefix:DbSimple_Generic_Database:private] => 
+                                                            [_logger:DbSimple_Generic_Database:private] => 
+                                                            [_cacher:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderArgs:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNativeArgs:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderCache:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNoValueFound:DbSimple_Generic_Database:private] => 
+                                                            [MAX_LOG_ROW_LEN:DbSimple_Generic_Database:private] => 128
+                                                            [error] => 
+                                                            [errmsg] => 
+                                                            [showStack:DbSimple_Generic_LastError:private] => 
+                                                            [errorHandler:DbSimple_Generic_LastError:private] => Array
+                                                                (
+                                                                    [0] => Am_Db
+                                                                    [1] => defaultDatabaseErrorHandler
+                                                                )
+
+                                                            [ignoresInTraceRe:DbSimple_Generic_LastError:private] => DbSimple_.*::.* | call_user_func.*
+                                                            [attributes] => Array
+                                                                (
+                                                                )
+
+                                                            [_lastQuery] => Array
+                                                                (
+                                                                    [0] => SELECT * FROM ?_integration WHERE ?# IN (?a)
+                                                                    [1] => integration_id
+                                                                    [2] => Array
+                                                                        (
+                                                                            [0] => 1
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                    [_keyIsInt:protected] => 1
+                                                    [_di:Am_Table:private] => Am_Di Object
+ *RECURSION*
+                                                    [cache:protected] => Array
+                                                        (
+                                                            [18] => Array
+                                                                (
+                                                                    [product_id] => 18
+                                                                    [title] => 2019 Conference
+                                                                    [description] => Non-NAIWE member price (includes $4.99 online processing fee) --- Sign up for NAIWE now for instant discount!
+                                                                    [trial_group] => 
+                                                                    [start_date] => product,group,payment
+                                                                    [currency] => 
+                                                                    [tax_group] => -1
+                                                                    [tax_digital] => 0
+                                                                    [sort_order] => 12
+                                                                    [renewal_group] => 
+                                                                    [start_date_fixed] => 
+                                                                    [require_other] => 
+                                                                    [prevent_if_other] => ACTIVE-1,ACTIVE-4,ACTIVE-7,ACTIVE-9,ACTIVE-11,ACTIVE-14,ACTIVE-15
+                                                                    [paysys_id] => 
+                                                                    [comment] => 
+                                                                    [default_billing_plan_id] => 17
+                                                                    [is_tangible] => 0
+                                                                    [is_disabled] => 0
+                                                                    [is_archived] => 0
+                                                                    [tax_rate_group] => 
+                                                                )
+
+                                                        )
+
+                                                    [_checkUnique] => 
+                                                )
+
+                                            [billingPlanTable] => BillingPlanTable Object
+                                                (
+                                                    [_key:protected] => plan_id
+                                                    [_table:protected] => ?_billing_plan
+                                                    [_recordClass:protected] => BillingPlan
+                                                    [productCache:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [useProductCache:protected] => 1
+                                                    [_customFields:protected] => Am_CustomFieldsManager Object
+                                                        (
+                                                            [ignoreFields:protected] => Array
+                                                                (
+                                                                )
+
+                                                            [fields:protected] => Array
+                                                                (
+                                                                )
+
+                                                            [callbacks:protected] => Array
+                                                                (
+                                                                )
+
+                                                        )
+
+                                                    [_customFieldsConfigKey:protected] => 
+                                                    [_db:protected] => Am_Db Object
+                                                        (
+                                                            [PDO] => PDO Object
+                                                                (
+                                                                )
+
+                                                            [_identPrefix:protected] => am_
+                                                            [_statistics:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                    [time] => 0.18969798088074
+                                                                    [count] => 68
+                                                                )
+
+                                                            [_cachePrefix:DbSimple_Generic_Database:private] => 
+                                                            [_logger:DbSimple_Generic_Database:private] => 
+                                                            [_cacher:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderArgs:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNativeArgs:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderCache:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNoValueFound:DbSimple_Generic_Database:private] => 
+                                                            [MAX_LOG_ROW_LEN:DbSimple_Generic_Database:private] => 128
+                                                            [error] => 
+                                                            [errmsg] => 
+                                                            [showStack:DbSimple_Generic_LastError:private] => 
+                                                            [errorHandler:DbSimple_Generic_LastError:private] => Array
+                                                                (
+                                                                    [0] => Am_Db
+                                                                    [1] => defaultDatabaseErrorHandler
+                                                                )
+
+                                                            [ignoresInTraceRe:DbSimple_Generic_LastError:private] => DbSimple_.*::.* | call_user_func.*
+                                                            [attributes] => Array
+                                                                (
+                                                                )
+
+                                                            [_lastQuery] => Array
+                                                                (
+                                                                    [0] => SELECT * FROM ?_integration WHERE ?# IN (?a)
+                                                                    [1] => integration_id
+                                                                    [2] => Array
+                                                                        (
+                                                                            [0] => 1
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                    [_keyIsInt:protected] => 1
+                                                    [_di:Am_Table:private] => Am_Di Object
+ *RECURSION*
+                                                    [useCache:protected] => 
+                                                    [cache:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [_checkUnique] => 
+                                                )
+
+                                            [resourceAccessTable] => ResourceAccessTable Object
+                                                (
+                                                    [_key:protected] => resource_access_id
+                                                    [_table:protected] => ?_resource_access
+                                                    [_recordClass:protected] => ResourceAccess
+                                                    [_types:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [_db:protected] => Am_Db Object
+                                                        (
+                                                            [PDO] => PDO Object
+                                                                (
+                                                                )
+
+                                                            [_identPrefix:protected] => am_
+                                                            [_statistics:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                    [time] => 0.18969798088074
+                                                                    [count] => 68
+                                                                )
+
+                                                            [_cachePrefix:DbSimple_Generic_Database:private] => 
+                                                            [_logger:DbSimple_Generic_Database:private] => 
+                                                            [_cacher:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderArgs:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNativeArgs:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderCache:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNoValueFound:DbSimple_Generic_Database:private] => 
+                                                            [MAX_LOG_ROW_LEN:DbSimple_Generic_Database:private] => 128
+                                                            [error] => 
+                                                            [errmsg] => 
+                                                            [showStack:DbSimple_Generic_LastError:private] => 
+                                                            [errorHandler:DbSimple_Generic_LastError:private] => Array
+                                                                (
+                                                                    [0] => Am_Db
+                                                                    [1] => defaultDatabaseErrorHandler
+                                                                )
+
+                                                            [ignoresInTraceRe:DbSimple_Generic_LastError:private] => DbSimple_.*::.* | call_user_func.*
+                                                            [attributes] => Array
+                                                                (
+                                                                )
+
+                                                            [_lastQuery] => Array
+                                                                (
+                                                                    [0] => SELECT * FROM ?_integration WHERE ?# IN (?a)
+                                                                    [1] => integration_id
+                                                                    [2] => Array
+                                                                        (
+                                                                            [0] => 1
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                    [_keyIsInt:protected] => 1
+                                                    [_di:Am_Table:private] => Am_Di Object
+ *RECURSION*
+                                                    [useCache:protected] => 
+                                                    [cache:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [_checkUnique] => 
+                                                )
+
+                                            [productCategoryTable] => ProductCategoryTable Object
+                                                (
+                                                    [_key:protected] => product_category_id
+                                                    [_table:protected] => ?_product_category
+                                                    [_recordClass:protected] => ProductCategory
+                                                    [categoryProductsCache:protected] => Array
+                                                        (
+                                                            [1] => Array
+                                                                (
+                                                                    [0] => 16
+                                                                    [1] => 18
+                                                                )
+
+                                                        )
+
+                                                    [_db:protected] => Am_Db Object
+                                                        (
+                                                            [PDO] => PDO Object
+                                                                (
+                                                                )
+
+                                                            [_identPrefix:protected] => am_
+                                                            [_statistics:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                    [time] => 0.18969798088074
+                                                                    [count] => 68
+                                                                )
+
+                                                            [_cachePrefix:DbSimple_Generic_Database:private] => 
+                                                            [_logger:DbSimple_Generic_Database:private] => 
+                                                            [_cacher:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderArgs:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNativeArgs:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderCache:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNoValueFound:DbSimple_Generic_Database:private] => 
+                                                            [MAX_LOG_ROW_LEN:DbSimple_Generic_Database:private] => 128
+                                                            [error] => 
+                                                            [errmsg] => 
+                                                            [showStack:DbSimple_Generic_LastError:private] => 
+                                                            [errorHandler:DbSimple_Generic_LastError:private] => Array
+                                                                (
+                                                                    [0] => Am_Db
+                                                                    [1] => defaultDatabaseErrorHandler
+                                                                )
+
+                                                            [ignoresInTraceRe:DbSimple_Generic_LastError:private] => DbSimple_.*::.* | call_user_func.*
+                                                            [attributes] => Array
+                                                                (
+                                                                )
+
+                                                            [_lastQuery] => Array
+                                                                (
+                                                                    [0] => SELECT * FROM ?_integration WHERE ?# IN (?a)
+                                                                    [1] => integration_id
+                                                                    [2] => Array
+                                                                        (
+                                                                            [0] => 1
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                    [_keyIsInt:protected] => 1
+                                                    [_di:Am_Table:private] => Am_Di Object
+ *RECURSION*
+                                                    [useCache:protected] => 
+                                                    [cache:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [_checkUnique] => 
+                                                )
+
+                                            [userStatusTable] => UserStatusTable Object
+                                                (
+                                                    [_key:protected] => user_status_id
+                                                    [_table:protected] => ?_user_status
+                                                    [_recordClass:protected] => UserStatus
+                                                    [_db:protected] => Am_Db Object
+                                                        (
+                                                            [PDO] => PDO Object
+                                                                (
+                                                                )
+
+                                                            [_identPrefix:protected] => am_
+                                                            [_statistics:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                    [time] => 0.18969798088074
+                                                                    [count] => 68
+                                                                )
+
+                                                            [_cachePrefix:DbSimple_Generic_Database:private] => 
+                                                            [_logger:DbSimple_Generic_Database:private] => 
+                                                            [_cacher:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderArgs:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNativeArgs:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderCache:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNoValueFound:DbSimple_Generic_Database:private] => 
+                                                            [MAX_LOG_ROW_LEN:DbSimple_Generic_Database:private] => 128
+                                                            [error] => 
+                                                            [errmsg] => 
+                                                            [showStack:DbSimple_Generic_LastError:private] => 
+                                                            [errorHandler:DbSimple_Generic_LastError:private] => Array
+                                                                (
+                                                                    [0] => Am_Db
+                                                                    [1] => defaultDatabaseErrorHandler
+                                                                )
+
+                                                            [ignoresInTraceRe:DbSimple_Generic_LastError:private] => DbSimple_.*::.* | call_user_func.*
+                                                            [attributes] => Array
+                                                                (
+                                                                )
+
+                                                            [_lastQuery] => Array
+                                                                (
+                                                                    [0] => SELECT * FROM ?_integration WHERE ?# IN (?a)
+                                                                    [1] => integration_id
+                                                                    [2] => Array
+                                                                        (
+                                                                            [0] => 1
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                    [_keyIsInt:protected] => 1
+                                                    [_di:Am_Table:private] => Am_Di Object
+ *RECURSION*
+                                                    [useCache:protected] => 
+                                                    [cache:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [_checkUnique] => 
+                                                )
+
+                                            [newsletterUserSubscriptionTable] => NewsletterUserSubscriptionTable Object
+                                                (
+                                                    [_key:protected] => subscription_id
+                                                    [_table:protected] => ?_newsletter_user_subscription
+                                                    [_db:protected] => Am_Db Object
+                                                        (
+                                                            [PDO] => PDO Object
+                                                                (
+                                                                )
+
+                                                            [_identPrefix:protected] => am_
+                                                            [_statistics:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                    [time] => 0.18969798088074
+                                                                    [count] => 68
+                                                                )
+
+                                                            [_cachePrefix:DbSimple_Generic_Database:private] => 
+                                                            [_logger:DbSimple_Generic_Database:private] => 
+                                                            [_cacher:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderArgs:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNativeArgs:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderCache:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNoValueFound:DbSimple_Generic_Database:private] => 
+                                                            [MAX_LOG_ROW_LEN:DbSimple_Generic_Database:private] => 128
+                                                            [error] => 
+                                                            [errmsg] => 
+                                                            [showStack:DbSimple_Generic_LastError:private] => 
+                                                            [errorHandler:DbSimple_Generic_LastError:private] => Array
+                                                                (
+                                                                    [0] => Am_Db
+                                                                    [1] => defaultDatabaseErrorHandler
+                                                                )
+
+                                                            [ignoresInTraceRe:DbSimple_Generic_LastError:private] => DbSimple_.*::.* | call_user_func.*
+                                                            [attributes] => Array
+                                                                (
+                                                                )
+
+                                                            [_lastQuery] => Array
+                                                                (
+                                                                    [0] => SELECT * FROM ?_integration WHERE ?# IN (?a)
+                                                                    [1] => integration_id
+                                                                    [2] => Array
+                                                                        (
+                                                                            [0] => 1
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                    [_recordClass:protected] => NewsletterUserSubscription
+                                                    [_keyIsInt:protected] => 1
+                                                    [_di:Am_Table:private] => Am_Di Object
+ *RECURSION*
+                                                    [useCache:protected] => 
+                                                    [cache:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [_checkUnique] => 
+                                                )
+
+                                            [newsletterListTable] => NewsletterListTable Object
+                                                (
+                                                    [_key:protected] => list_id
+                                                    [_table:protected] => ?_newsletter_list
+                                                    [useCache:protected] => 1
+                                                    [_db:protected] => Am_Db Object
+                                                        (
+                                                            [PDO] => PDO Object
+                                                                (
+                                                                )
+
+                                                            [_identPrefix:protected] => am_
+                                                            [_statistics:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                    [time] => 0.18969798088074
+                                                                    [count] => 68
+                                                                )
+
+                                                            [_cachePrefix:DbSimple_Generic_Database:private] => 
+                                                            [_logger:DbSimple_Generic_Database:private] => 
+                                                            [_cacher:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderArgs:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNativeArgs:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderCache:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNoValueFound:DbSimple_Generic_Database:private] => 
+                                                            [MAX_LOG_ROW_LEN:DbSimple_Generic_Database:private] => 128
+                                                            [error] => 
+                                                            [errmsg] => 
+                                                            [showStack:DbSimple_Generic_LastError:private] => 
+                                                            [errorHandler:DbSimple_Generic_LastError:private] => Array
+                                                                (
+                                                                    [0] => Am_Db
+                                                                    [1] => defaultDatabaseErrorHandler
+                                                                )
+
+                                                            [ignoresInTraceRe:DbSimple_Generic_LastError:private] => DbSimple_.*::.* | call_user_func.*
+                                                            [attributes] => Array
+                                                                (
+                                                                )
+
+                                                            [_lastQuery] => Array
+                                                                (
+                                                                    [0] => SELECT * FROM ?_integration WHERE ?# IN (?a)
+                                                                    [1] => integration_id
+                                                                    [2] => Array
+                                                                        (
+                                                                            [0] => 1
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                    [_recordClass:protected] => NewsletterList
+                                                    [_keyIsInt:protected] => 1
+                                                    [_di:Am_Table:private] => Am_Di Object
+ *RECURSION*
+                                                    [cache:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [_checkUnique] => 
+                                                )
+
+                                            [integrationTable] => IntegrationTable Object
+                                                (
+                                                    [_key:protected] => integration_id
+                                                    [_table:protected] => ?_integration
+                                                    [_recordClass:protected] => Integration
+                                                    [_db:protected] => Am_Db Object
+                                                        (
+                                                            [PDO] => PDO Object
+                                                                (
+                                                                )
+
+                                                            [_identPrefix:protected] => am_
+                                                            [_statistics:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                    [time] => 0.18969798088074
+                                                                    [count] => 68
+                                                                )
+
+                                                            [_cachePrefix:DbSimple_Generic_Database:private] => 
+                                                            [_logger:DbSimple_Generic_Database:private] => 
+                                                            [_cacher:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderArgs:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNativeArgs:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderCache:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNoValueFound:DbSimple_Generic_Database:private] => 
+                                                            [MAX_LOG_ROW_LEN:DbSimple_Generic_Database:private] => 128
+                                                            [error] => 
+                                                            [errmsg] => 
+                                                            [showStack:DbSimple_Generic_LastError:private] => 
+                                                            [errorHandler:DbSimple_Generic_LastError:private] => Array
+                                                                (
+                                                                    [0] => Am_Db
+                                                                    [1] => defaultDatabaseErrorHandler
+                                                                )
+
+                                                            [ignoresInTraceRe:DbSimple_Generic_LastError:private] => DbSimple_.*::.* | call_user_func.*
+                                                            [attributes] => Array
+                                                                (
+                                                                )
+
+                                                            [_lastQuery] => Array
+                                                                (
+                                                                    [0] => SELECT * FROM ?_integration WHERE ?# IN (?a)
+                                                                    [1] => integration_id
+                                                                    [2] => Array
+                                                                        (
+                                                                            [0] => 1
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                    [_keyIsInt:protected] => 1
+                                                    [_di:Am_Table:private] => Am_Di Object
+ *RECURSION*
+                                                    [useCache:protected] => 
+                                                    [cache:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [_checkUnique] => 
+                                                )
+
+                                            [savedPassTable] => SavedPassTable Object
+                                                (
+                                                    [_key:protected] => saved_pass_id
+                                                    [_table:protected] => ?_saved_pass
+                                                    [_recordClass:protected] => SavedPass
+                                                    [_db:protected] => Am_Db Object
+                                                        (
+                                                            [PDO] => PDO Object
+                                                                (
+                                                                )
+
+                                                            [_identPrefix:protected] => am_
+                                                            [_statistics:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                    [time] => 0.18969798088074
+                                                                    [count] => 68
+                                                                )
+
+                                                            [_cachePrefix:DbSimple_Generic_Database:private] => 
+                                                            [_logger:DbSimple_Generic_Database:private] => 
+                                                            [_cacher:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderArgs:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNativeArgs:DbSimple_Generic_Database:private] => 
+                                                            [_placeholderCache:DbSimple_Generic_Database:private] => Array
+                                                                (
+                                                                )
+
+                                                            [_placeholderNoValueFound:DbSimple_Generic_Database:private] => 
+                                                            [MAX_LOG_ROW_LEN:DbSimple_Generic_Database:private] => 128
+                                                            [error] => 
+                                                            [errmsg] => 
+                                                            [showStack:DbSimple_Generic_LastError:private] => 
+                                                            [errorHandler:DbSimple_Generic_LastError:private] => Array
+                                                                (
+                                                                    [0] => Am_Db
+                                                                    [1] => defaultDatabaseErrorHandler
+                                                                )
+
+                                                            [ignoresInTraceRe:DbSimple_Generic_LastError:private] => DbSimple_.*::.* | call_user_func.*
+                                                            [attributes] => Array
+                                                                (
+                                                                )
+
+                                                            [_lastQuery] => Array
+                                                                (
+                                                                    [0] => SELECT * FROM ?_integration WHERE ?# IN (?a)
+                                                                    [1] => integration_id
+                                                                    [2] => Array
+                                                                        (
+                                                                            [0] => 1
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                    [_keyIsInt:protected] => 1
+                                                    [_di:Am_Table:private] => Am_Di Object
+ *RECURSION*
+                                                    [useCache:protected] => 
+                                                    [cache:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [_checkUnique] => 
+                                                )
+
+                                        )
+
+                                    [count:protected] => 0
+                                )
+
+                            [hooksToAlwaysEnable:protected] => Array
+                                (
+                                    [0] => setupForms
+                                    [1] => adminWarnings
+                                    [2] => setupEmailTemplateTypes
+                                )
+
+                        )
+
+                    [1] => dbErrorHandler
+                )
+
+            [ignoresInTraceRe:DbSimple_Generic_LastError:private] => DbSimple_.*::.* | call_user_func.*
+            [attributes] => Array
+                (
+                )
+
+            [_lastQuery] => Array
+                (
+                    [0] => select * from ?_usermeta where user_id=? and meta_key=?
+                    [1] => 1098
+                    [2] => primary_blog
+                )
+
+        )
+
+    [_disableInsertPkCheck:protected] => 
+    [_isFrozen:protected] => 
+    [ID] => 1098
+    [user_login] => testuser2
+    [user_pass] => $P$BSFie6sAtDyaucm3l9ujcj6xomxHPt/
+    [user_nicename] => testuser2
+    [user_email] => test2@thinkable.us
+    [user_url] => 
+    [user_registered] => 2019-09-01 04:18:30
+    [user_activation_key] => 
+    [user_status] => 0
+    [display_name] => test user2
+    [spam] => 0
+    [deleted] => 0
+)
+
+[01-Sep-2019 04:20:39 UTC] PHP Fatal error:  Call to undefined function get_blog_details() in /home/pjsy7n2zwi5t/public_html/amember/application/default/plugins/protect/wordpress/wordpress.php on line 1174
+[01-Sep-2019 04:28:01 UTC] PHP Fatal error:  Call to undefined function is_subdomain_install() in /home/pjsy7n2zwi5t/public_html/amember/application/default/plugins/protect/wordpress/wordpress.php on line 1185
+[16-Sep-2019 23:54:29 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/pjsy7n2zwi5t/public_html/amember/cron.php on line 14
+[16-Sep-2019 23:57:00 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/pjsy7n2zwi5t/public_html/amember/cron.php on line 14
+[16-Sep-2019 23:57:21 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/pjsy7n2zwi5t/public_html/amember/cron.php on line 14
