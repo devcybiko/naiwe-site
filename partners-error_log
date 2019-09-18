@@ -1,12 +1,3 @@
-[23-Aug-2019 15:56:49 UTC] PHP Warning:  include(): Failed opening 'inc/sidebar.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/pjsy7n2zwi5t/public_html/partners/index.php on line 64
-[24-Aug-2019 00:52:11 UTC] PHP Strict Standards:  Declaration of ezSQL_mysql::query() should be compatible with ezSQLcore::query() in /home/pjsy7n2zwi5t/public_html/ezsql/mysql/ez_sql_mysql.php on line 265
-[24-Aug-2019 00:52:11 UTC] PHP Strict Standards:  Declaration of ezSQL_mysql::escape() should be compatible with ezSQLcore::escape() in /home/pjsy7n2zwi5t/public_html/ezsql/mysql/ez_sql_mysql.php on line 265
-[24-Aug-2019 00:52:11 UTC] PHP Notice:  Undefined index: pgDesc in /home/pjsy7n2zwi5t/public_html/global/inc/head.php on line 31
-[24-Aug-2019 00:52:11 UTC] PHP Notice:  Undefined index: pgKeywords in /home/pjsy7n2zwi5t/public_html/global/inc/head.php on line 33
-[24-Aug-2019 00:52:11 UTC] PHP Notice:  Undefined index: _amember_user in /home/pjsy7n2zwi5t/public_html/global/inc/page-header.php on line 24
-[24-Aug-2019 00:52:11 UTC] PHP Warning:  include(inc/nav.php): failed to open stream: No such file or directory in /home/pjsy7n2zwi5t/public_html/global/inc/functions.php on line 78
-[24-Aug-2019 00:52:11 UTC] PHP Warning:  include(): Failed opening 'inc/nav.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/pjsy7n2zwi5t/public_html/global/inc/functions.php on line 78
-[24-Aug-2019 00:52:26 UTC] PHP Warning:  include(inc/sidebar.php): failed to open stream: No such file or directory in /home/pjsy7n2zwi5t/public_html/partners/index.php on line 64
 [24-Aug-2019 00:52:26 UTC] PHP Warning:  include(): Failed opening 'inc/sidebar.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/pjsy7n2zwi5t/public_html/partners/index.php on line 64
 [24-Aug-2019 10:15:43 UTC] PHP Strict Standards:  Declaration of ezSQL_mysql::query() should be compatible with ezSQLcore::query() in /home/pjsy7n2zwi5t/public_html/ezsql/mysql/ez_sql_mysql.php on line 265
 [24-Aug-2019 10:15:43 UTC] PHP Strict Standards:  Declaration of ezSQL_mysql::escape() should be compatible with ezSQLcore::escape() in /home/pjsy7n2zwi5t/public_html/ezsql/mysql/ez_sql_mysql.php on line 265
@@ -998,3 +989,12 @@
 [17-Sep-2019 19:24:42 UTC] PHP Warning:  include(): Failed opening 'inc/nav.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/pjsy7n2zwi5t/public_html/global/inc/functions.php on line 78
 [17-Sep-2019 19:24:51 UTC] PHP Warning:  include(inc/sidebar.php): failed to open stream: No such file or directory in /home/pjsy7n2zwi5t/public_html/partners/index.php on line 64
 [17-Sep-2019 19:24:51 UTC] PHP Warning:  include(): Failed opening 'inc/sidebar.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/pjsy7n2zwi5t/public_html/partners/index.php on line 64
+[18-Sep-2019 02:47:48 UTC] PHP Strict Standards:  Declaration of ezSQL_mysql::query() should be compatible with ezSQLcore::query() in /home/pjsy7n2zwi5t/public_html/ezsql/mysql/ez_sql_mysql.php on line 265
+[18-Sep-2019 02:47:48 UTC] PHP Strict Standards:  Declaration of ezSQL_mysql::escape() should be compatible with ezSQLcore::escape() in /home/pjsy7n2zwi5t/public_html/ezsql/mysql/ez_sql_mysql.php on line 265
+[18-Sep-2019 02:47:48 UTC] PHP Notice:  Undefined index: pgDesc in /home/pjsy7n2zwi5t/public_html/global/inc/head.php on line 31
+[18-Sep-2019 02:47:48 UTC] PHP Notice:  Undefined index: pgKeywords in /home/pjsy7n2zwi5t/public_html/global/inc/head.php on line 33
+[18-Sep-2019 02:47:48 UTC] PHP Notice:  Undefined index: _amember_user in /home/pjsy7n2zwi5t/public_html/global/inc/page-header.php on line 24
+[18-Sep-2019 02:47:48 UTC] PHP Warning:  include(inc/nav.php): failed to open stream: No such file or directory in /home/pjsy7n2zwi5t/public_html/global/inc/functions.php on line 78
+[18-Sep-2019 02:47:48 UTC] PHP Warning:  include(): Failed opening 'inc/nav.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/pjsy7n2zwi5t/public_html/global/inc/functions.php on line 78
+[18-Sep-2019 02:47:48 UTC] PHP Warning:  include(inc/sidebar.php): failed to open stream: No such file or directory in /home/pjsy7n2zwi5t/public_html/partners/index.php on line 64
+[18-Sep-2019 02:47:48 UTC] PHP Warning:  include(): Failed opening 'inc/sidebar.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/pjsy7n2zwi5t/public_html/partners/index.php on line 64
