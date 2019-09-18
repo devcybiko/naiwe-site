@@ -1,9 +1,10 @@
 #!/bin/bash -v
 find ~/public_html -name 'error_log' -ls -exec ~/git/naiwe-logs/cp.sh {} ';'
 cd ~/git/naiwe-logs
-date > lastupdate.txt
+theDate=`date`
+echo "$theDate" > lastUpdate.txt
 id > id.txt
 #git pull
 git add -A
-git commit -am "auto-updating"
+git commit -am "auto-updating $theDate"
 git push
