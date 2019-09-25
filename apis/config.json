@@ -32,7 +32,7 @@
       "database": "naiwe"
     },
     "naiweConfig": {
-      "logDir": "/home/ec2-user/git/naiwe-site"
+      "logDir": "/var/www/naiwe-site"
     }
   }
 }
