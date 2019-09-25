@@ -11,6 +11,8 @@ String.prototype.replaceAll = function (search, replacement) {
 const app = express();
 var port = process.env.PORT || 8890;
 
+process.chdir('/home/ec2_user/git/naiwe-site');
+
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 app.use(express.static('static'))
