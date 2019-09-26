@@ -154,6 +154,8 @@ const PlotSimple = {
         var xLabel = options.xLabel || "X";
         var yLabel = options.yLabel || "Y";
         var barColor = options.barColor || 'red';
+        var xAxis = options.xAxis === undefined ? true : options.xAxis;
+        var yAxis = options.yAxis === undefined ? true : options.yAxis;
 
         document.getElementById(divName).innerHTML = "";
         var svg = d3.select(`#${divName}`)
@@ -170,13 +172,27 @@ const PlotSimple = {
         var yLinearScale = d3.scaleLinear()
             .domain([0, d3.max(dataArray, d => +d.y[0])])
             .range([height, 0]);
-        var bottomAxis = d3.axisBottom(xBandScale);
-        var leftAxis = d3.axisLeft(yLinearScale).ticks(options.yticks || 10);
-        chartGroup.append("g")
-            .call(leftAxis);
-        chartGroup.append("g")
-            .attr("transform", `translate(0, ${height})`)
-            .call(bottomAxis);
+        if (xAxis) {
+            var bottomAxis =  d3.axisBottom(xBandScale);
+            chartGroup.append("g")
+                .attr("transform", `translate(0, ${height})`)
+                .call(bottomAxis);
+            chartGroup.append("text")
+                .attr("transform", `translate(${width / 2}, ${height + margin.top})`)
+                .attr("class", "axisText")
+                .text(xLabel);
+        }
+        if (yAxis) {
+            var leftAxis = d3.axisLeft(yLinearScale).ticks(options.yticks || 10);
+            chartGroup.append("g").call(leftAxis);
+            chartGroup.append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("y", 0 - margin.left)
+                .attr("x", 0 - (height + yLabel.length * 8) / 2)
+                .attr("dy", "1em")
+                .attr("class", "axisText")
+                .text(yLabel);
+        }
         chartGroup.selectAll(".bar")
             .data(dataArray)
             .enter()
@@ -205,17 +221,6 @@ const PlotSimple = {
                     .duration(500)
                     .style('opacity', 0);
             });
-        chartGroup.append("text")
-            .attr("transform", "rotate(-90)")
-            .attr("y", 0 - margin.left)
-            .attr("x", 0 - (height + yLabel.length * 8) / 2)
-            .attr("dy", "1em")
-            .attr("class", "axisText")
-            .text(yLabel);
-        chartGroup.append("text")
-            .attr("transform", `translate(${width / 2}, ${height + margin.top})`)
-            .attr("class", "axisText")
-            .text(xLabel);
     },
 
     /*
@@ -308,11 +313,11 @@ const PlotSimple = {
         let valueline = [];
         let yMin = 0;
         let yMax = 0;
-        for(var i=0; i< dataArray.length; i++) {
+        for (var i = 0; i < dataArray.length; i++) {
             let d = dataArray[i];
-            for (var j=0; j< d.y.length; j++) {
+            for (var j = 0; j < d.y.length; j++) {
                 if (yMin > d.y[j]) yMin = d.y[j];
-                if (yMax < d.y[j]) yMax = d.y[j];       
+                if (yMax < d.y[j]) yMax = d.y[j];
             }
         }
         yScale.domain([yMin, yMax])
@@ -320,9 +325,10 @@ const PlotSimple = {
             valueline.push(d3.line(dataArray)
                 .curve(eval(curve))
                 .x(function (d) { return xScale(d.x[0]); })
-                .y(function (d) { 
+                .y(function (d) {
                     d.y[i] = +d.y[i];
-                    return yScale(d.y[i] || 0); })
+                    return yScale(d.y[i] || 0);
+                })
                 .defined(function (d) {
                     return d.y[i] || d.y[i] === 0;
                 })
@@ -418,7 +424,7 @@ const PlotSimple = {
         let t = $(`#${divName}-table`).DataTable(columnDefs);
         for (let i = 0; i < dataArray.length; i++) {
             let row = dataArray[i];
-            row[0] = '';
+            if (options && options.check) row[0] = '';
             const rowArray = Object.keys(row).map(j => row[j])
             let trow = t.row.add(rowArray).draw(true);
         }

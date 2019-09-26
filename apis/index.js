@@ -2,9 +2,10 @@ let fs = require("fs");
 let path = require("path");
 let basename = path.basename(module.filename);
 let env = process.env.NODE_ENV || "production";
-let config = require(__dirname + "/config.json")[env];
+let config = require(__dirname + "/api-config.json")[env];
 let apis = {};
 
+console.log(env);
 fs.readdirSync(__dirname)
   .forEach(function(file) {
     let apiPath = path.join(__dirname, file, "index.js");

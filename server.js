@@ -3,15 +3,18 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const apis = require('./apis/index.js');
 
+let env = process.env.NODE_ENV || "production";
+let config = require(__dirname + "/config.json")[env];
+
+// bad practice ... but... ok
 String.prototype.replaceAll = function (search, replacement) {
     var target = this;
     return target.replace(new RegExp(search, 'g'), replacement);
 };
 
 const app = express();
-var port = process.env.PORT || 8890;
-
-process.chdir('/home/ec2-user/git/naiwe-site');
+var port = process.env.PORT || config.port || 8890;
+process.chdir(config.cwd || '.');
 
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies

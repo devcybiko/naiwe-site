@@ -1,0 +1,19 @@
+{
+  "development": {
+    "logDir": "/Users/greg/Dropbox/git/naiwe-logs",
+    "cwd": "/Users/greg/Dropbox/git/naiwe-site",
+    "port": 8888
+  },
+  "test": {
+    "logDir": "/Users/greg/Dropbox/git/naiwe-logs",
+    "cwd": "/Users/greg/Dropbox/git/naiwe-site",
+    "port": 8890
+  },
+  "production": {
+    "naiweConfig": {
+      "logDir": "/var/www/naiwe-site",
+      "cwd": "/Users/greg/Dropbox/git/naiwe-site",
+      "port": 8890
+    }
+  }
+}
