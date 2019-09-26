@@ -5,6 +5,7 @@ const apis = require('./apis/index.js');
 
 let env = process.env.NODE_ENV || "production";
 let config = require(__dirname + "/config.json")[env];
+console.log(config)
 
 // bad practice ... but... ok
 String.prototype.replaceAll = function (search, replacement) {
@@ -14,6 +15,7 @@ String.prototype.replaceAll = function (search, replacement) {
 
 const app = express();
 var port = process.env.PORT || config.port || 8890;
+
 process.chdir(config.cwd || '.');
 
 app.use(bodyParser.json()); // support json encoded bodies
