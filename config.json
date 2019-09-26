@@ -12,7 +12,7 @@
   "production": {
     "naiweConfig": {
       "logDir": "/var/www/naiwe-site",
-      "cwd": "/Users/greg/Dropbox/git/naiwe-site",
+      "cwd": "/home/ec2-user/git/naiwe-site",
       "port": 8890
     }
   }
