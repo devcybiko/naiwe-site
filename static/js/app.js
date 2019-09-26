@@ -8,6 +8,7 @@ function main() {
     uniqueErrors();
     uniqueSourceErrors();
     logfileCounts();
+    lastUpdate();
 }
 
 main();

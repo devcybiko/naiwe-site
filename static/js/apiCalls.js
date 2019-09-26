@@ -77,3 +77,15 @@ function logfileCounts() {
         $('#logfileCountsDiv').html(table);
     });
 }
+
+function lastUpdate() {
+    var url = "/api/mysql/query";
+    var data = {
+        query: `select DATE_FORMAT(MAX(logtime), "%W %M %e %Y %r") as lasttime from rawlogs`
+    }
+    jQuery.post(url, data).then(result => {
+        console.log(result)
+        let data = JSON.parse(result);
+        $(`#lastUpdateSpan`).text(`Last Update: ${data[0].lasttime}`);
+    });
+}
