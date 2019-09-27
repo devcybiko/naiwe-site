@@ -11,7 +11,7 @@ const load = function(data, context, callback) {
         fnames.forEach(logFname => {
             if (!logFname.endsWith("_log")) return;
             fnameCnt++;
-            let fullname = config.naiweConfig.logDir + "/" + logFname;
+            let fullname = this.config.naiweConfig.logDir + "/" + logFname;
             let rows = [];
             let lines = gls.readTextFile(fullname);
             for (let i = 0; i < lines.length; i++) {
