@@ -10,7 +10,7 @@
     "port": 8890
   },
   "production": {
-    "logDir": "/var/www/naiwe-site",
+    "logDir": "/var/www/naiwe-logs",
     "cwd": "/home/ec2-user/git/naiwe-site",
     "port": 8890
   }
