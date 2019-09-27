@@ -34,7 +34,8 @@
       "database": "naiwe"
     },
     "naiweConfig": {
-      "logDir": "/var/www/naiwe-logs"
+      "logDir": "/var/www/naiwe-logs",
+      "cwd": "/home/ec2-user/git/naiwe-site"
     }
   }
 }
