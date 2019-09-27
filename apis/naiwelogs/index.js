@@ -27,6 +27,9 @@ const NAIWELogsConstructor = function (config) {
     };
     this.query = query;
     this.load = load;
+        this.query = this.query.bind(this);
+        this.load = this.load.bind(this);
+
     this.weeklyErrorCounts = weeklyErrorCounts;
     this.totalErrorCount = totalErrorCount;
     this.uniqueErrors = uniqueErrors;
