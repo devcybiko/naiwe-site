@@ -34,7 +34,7 @@
       "database": "naiwe"
     },
     "naiweConfig": {
-      "logDir": "/var/www/naiwe-site"
+      "logDir": "/var/www/naiwe-logs"
     }
   }
 }
