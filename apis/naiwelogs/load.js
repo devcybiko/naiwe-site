@@ -1,4 +1,5 @@
 const mysql = require("mysql2");
+const gls = require("./glsfiles.js");
 
 const load = (data, context, callback) => {
     let response = "";
