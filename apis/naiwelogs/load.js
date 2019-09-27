@@ -5,7 +5,7 @@ const load = (data, context, callback) => {
     let response = "";
     let responses = 0;
     let fnameCnt = 0;
-    let fnames = gls.readDir(config.naiweConfig.logDir);
+    let fnames = gls.readDir(this.config.naiweConfig.logDir);
     this.connect(this.connection, context, function (err, connection, context) {
         if (err) return callback(err, connection, context);
         fnames.forEach(logFname => {
