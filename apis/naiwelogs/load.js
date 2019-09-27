@@ -5,13 +5,13 @@ const load = function(data, context, callback) {
     let response = "";
     let responses = 0;
     let fnameCnt = 0;
-    let fnames = gls.readDir(config.naiweConfig.logDir);
+    let fnames = gls.readDir(this.config.naiweConfig.logDir);
     this.connect(this.connection, context, function (err, connection, context) {
         if (err) return callback(err, connection, context);
         fnames.forEach(logFname => {
             if (!logFname.endsWith("_log")) return;
             fnameCnt++;
-            let fullname = config.naiweConfig.logDir + "/" + logFname;
+            let fullname = this.config.naiweConfig.logDir + "/" + logFname;
             let rows = [];
             let lines = gls.readTextFile(fullname);
             for (let i = 0; i < lines.length; i++) {
