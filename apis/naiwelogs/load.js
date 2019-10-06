@@ -39,12 +39,12 @@ const load = function(data, context, callback) {
             let sql = "INSERT IGNORE INTO rawlogs (logtime, logname, logtext, logerr, srccode) VALUES ?";
             connection.query(sql, [rows], function (err, rowset) {
                 responses++;
-                console.log(`${responses}...${fnameCnt}`);
+                //console.log(`${responses}...${fnameCnt}`);
                 if (err) {
                     console.error("bad..." + err.message);
                     response += err.message;
                 } else {
-                    console.log(rowset);
+                    //console.log(rowset);
                     response += `<br>${responses}: ${rowset.info}`;
                 }
                 if (responses === fnameCnt) {
