@@ -54,25 +54,25 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
+          <li class="nav-item inactive  ">
             <a class="nav-link" href="index.html">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
           <li class="nav-item inactive  ">
-              <a class="nav-link" href="usourceErrors.html">
+            <a class="nav-link" href="usourceErrors.html">
+              <i class="material-icons">dashboard</i>
+              <p>USource Errors (<span class="uniqueSourceErrorsCountDiv"></span>)</p>
+            </a>
+          </li>
+          <li class="nav-item active  ">
+              <a class="nav-link" href="uniqueErrors.html">
                 <i class="material-icons">dashboard</i>
-                <p>USource Errors (<span class="uniqueSourceErrorsCountDiv"></span>)</p>
+                <p>Unique Errors (<span class="uniqueErrorsCountDiv"></span>)</p>
               </a>
-            </li>
-            <li class="nav-item inactive  ">
-                <a class="nav-link" href="uniqueErrors.html">
-                  <i class="material-icons">dashboard</i>
-                  <p>Unique Errors (<span class="uniqueErrorsCountDiv"></span>)</p>
-                </a>
-              </li>
-              </ul>
+            </li>  
+        </ul>
       </div>
     </div>
     <div class="main-panel">
@@ -118,7 +118,7 @@
                     <i class="material-icons">store</i>
                   </div>
                   <p class="card-category">USource Errors</p>
-                  <h3 class="card-title uniqueSourceErrorsCountDiv">xx</h3>
+                  <h3 class="card-title" id='uniqueSourceErrorsCountDiv'></h3>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
@@ -150,7 +150,7 @@
                     <i class="fa fa-twitter"></i>
                   </div>
                   <p class="card-category">Total Weeks</p>
-                  <h3 class="card-title" id="totalWeeksCountDiv"></h3>
+                  <h3 class="card-title totalWeeksCountDiv"></h3>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
@@ -161,41 +161,8 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4">
-              <div class="card card-chart">
-                <div class="card-header card-header-success">
-                  <div class="ct-chart" id="miniWeeklyErrorCountsDiv"></div>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Weekly Errors</h4>
-                  <p class="card-category">
-                    <span class="text-warning" id="miniWeeklyErrorCountsDivColor"><i class="fa" id="miniWeeklyErrorCountsDivTrend"></i></span><span id="miniWeeklyErrorCountsDivSpan">Trending</span></p>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">access_time</i> Last 5 Weeks
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card card-chart">
-                <div class="card-header card-header-warning">
-                  <div class="ct-chart" id="logfileCountsDiv"></div>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Top Errors This Week</h4>
-                  <p class="card-category">top 5 log files with errors</p>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">access_time</i> next update in 12 hours
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <button class="btn btn-round btn-danger">Purge</button>
+            <div class="col-md-12">
+              <div id="uniqueErrorsDiv"></div>
             </div>
           </div>
         </div>

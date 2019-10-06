@@ -24,17 +24,18 @@
   <title>
     NAIWE LOGS
   </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport' />
   <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="/static/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="/static/demo/demo.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css" />
-  <link rel="stylesheet" type="text/css"
-      href="https://cdn.datatables.net/select/1.3.0/css/select.dataTables.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.3.0/css/select.dataTables.min.css" />
   <link rel="stylesheet" type="text/css" href="/static/css/plotsimple.css" />
 
 </head>
@@ -54,25 +55,25 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
+          <li class="nav-item inactive  ">
             <a class="nav-link" href="index.html">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
+          <li class="nav-item active  ">
+            <a class="nav-link" href="usourceErrors.html">
+              <i class="material-icons">dashboard</i>
+              <p>USource Errors (<span class="uniqueSourceErrorsCountDiv"></span>)</p>
+            </a>
+          </li>
           <li class="nav-item inactive  ">
-              <a class="nav-link" href="usourceErrors.html">
-                <i class="material-icons">dashboard</i>
-                <p>USource Errors (<span class="uniqueSourceErrorsCountDiv"></span>)</p>
-              </a>
-            </li>
-            <li class="nav-item inactive  ">
-                <a class="nav-link" href="uniqueErrors.html">
-                  <i class="material-icons">dashboard</i>
-                  <p>Unique Errors (<span class="uniqueErrorsCountDiv"></span>)</p>
-                </a>
-              </li>
-              </ul>
+            <a class="nav-link" href="uniqueErrors.html">
+              <i class="material-icons">dashboard</i>
+              <p>Unique Errors (<span class="uniqueErrorsCountDiv"></span>)</p>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="main-panel">
@@ -83,7 +84,8 @@
             <a class="navbar-brand" href="#pablo">Dashboard</a>
             <span id="lastUpdateSpan">Last Update: </span>
           </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon icon-bar"></span>
             <span class="navbar-toggler-icon icon-bar"></span>
@@ -102,7 +104,7 @@
                     <i class="material-icons">content_copy</i>
                   </div>
                   <p class="card-category">Total Errors</p>
-                  <h3 class="card-title" id="totalErrorCountDiv"></h3>
+                  <h3 class="card-title totalErrorCountDiv"></h3>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
@@ -118,7 +120,7 @@
                     <i class="material-icons">store</i>
                   </div>
                   <p class="card-category">USource Errors</p>
-                  <h3 class="card-title uniqueSourceErrorsCountDiv">xx</h3>
+                  <h3 class="card-title uniqueSourceErrorsCountDiv"></h3>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
@@ -150,7 +152,7 @@
                     <i class="fa fa-twitter"></i>
                   </div>
                   <p class="card-category">Total Weeks</p>
-                  <h3 class="card-title" id="totalWeeksCountDiv"></h3>
+                  <h3 class="card-title totalWeeksCountDiv"></h3>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
@@ -161,41 +163,8 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4">
-              <div class="card card-chart">
-                <div class="card-header card-header-success">
-                  <div class="ct-chart" id="miniWeeklyErrorCountsDiv"></div>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Weekly Errors</h4>
-                  <p class="card-category">
-                    <span class="text-warning" id="miniWeeklyErrorCountsDivColor"><i class="fa" id="miniWeeklyErrorCountsDivTrend"></i></span><span id="miniWeeklyErrorCountsDivSpan">Trending</span></p>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">access_time</i> Last 5 Weeks
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card card-chart">
-                <div class="card-header card-header-warning">
-                  <div class="ct-chart" id="logfileCountsDiv"></div>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Top Errors This Week</h4>
-                  <p class="card-category">top 5 log files with errors</p>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">access_time</i> next update in 12 hours
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <button class="btn btn-round btn-danger">Purge</button>
+            <div class="col-md-12">
+              <div id="uniqueSourceErrorsDiv"></div>
             </div>
           </div>
         </div>
@@ -210,17 +179,17 @@
                 </a>
               </li>
               <li>
-                <a target="_blank"  href="https://wiki.greg-smith.com/">
+                <a target="_blank" href="https://wiki.greg-smith.com/">
                   Wiki
                 </a>
               </li>
               <li>
-                <a target="_blank"  href="https://greg-smith.com/?page_id=175">
+                <a target="_blank" href="https://greg-smith.com/?page_id=175">
                   Blog
                 </a>
               </li>
               <li>
-                <a target="_blank"  href="http://agilewriters.us/schedule">
+                <a target="_blank" href="http://agilewriters.us/schedule">
                   Schedule
                 </a>
               </li>
@@ -286,8 +255,8 @@
   <script src="/static/js/app.js"></script>
 
   <script>
-    $(document).ready(function() {
-      $().ready(function() {
+    $(document).ready(function () {
+      $().ready(function () {
         $sidebar = $('.sidebar');
 
         $sidebar_img_container = $sidebar.find('.sidebar-background');
@@ -307,7 +276,7 @@
 
         }
 
-        $('.fixed-plugin a').click(function(event) {
+        $('.fixed-plugin a').click(function (event) {
           // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
           if ($(this).hasClass('switch-trigger')) {
             if (event.stopPropagation) {
@@ -318,7 +287,7 @@
           }
         });
 
-        $('.fixed-plugin .active-color span').click(function() {
+        $('.fixed-plugin .active-color span').click(function () {
           $full_page_background = $('.full-page-background');
 
           $(this).siblings().removeClass('active');
@@ -339,7 +308,7 @@
           }
         });
 
-        $('.fixed-plugin .background-color .badge').click(function() {
+        $('.fixed-plugin .background-color .badge').click(function () {
           $(this).siblings().removeClass('active');
           $(this).addClass('active');
 
@@ -350,7 +319,7 @@
           }
         });
 
-        $('.fixed-plugin .img-holder').click(function() {
+        $('.fixed-plugin .img-holder').click(function () {
           $full_page_background = $('.full-page-background');
 
           $(this).parent('li').siblings().removeClass('active');
@@ -360,7 +329,7 @@
           var new_image = $(this).find("img").attr('src');
 
           if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
-            $sidebar_img_container.fadeOut('fast', function() {
+            $sidebar_img_container.fadeOut('fast', function () {
               $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
               $sidebar_img_container.fadeIn('fast');
             });
@@ -369,7 +338,7 @@
           if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
             var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
 
-            $full_page_background.fadeOut('fast', function() {
+            $full_page_background.fadeOut('fast', function () {
               $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
               $full_page_background.fadeIn('fast');
             });
@@ -388,7 +357,7 @@
           }
         });
 
-        $('.switch-sidebar-image input').change(function() {
+        $('.switch-sidebar-image input').change(function () {
           $full_page_background = $('.full-page-background');
 
           $input = $(this);
@@ -420,7 +389,7 @@
           }
         });
 
-        $('.switch-sidebar-mini input').change(function() {
+        $('.switch-sidebar-mini input').change(function () {
           $body = $('body');
 
           $input = $(this);
@@ -435,7 +404,7 @@
 
             $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
 
-            setTimeout(function() {
+            setTimeout(function () {
               $('body').addClass('sidebar-mini');
 
               md.misc.sidebar_mini_active = true;
@@ -443,12 +412,12 @@
           }
 
           // we simulate the window Resize so the charts will get updated in realtime.
-          var simulateWindowResize = setInterval(function() {
+          var simulateWindowResize = setInterval(function () {
             window.dispatchEvent(new Event('resize'));
           }, 180);
 
           // we stop the simulation of Window Resize after the animations are completed
-          setTimeout(function() {
+          setTimeout(function () {
             clearInterval(simulateWindowResize);
           }, 1000);
 
@@ -457,7 +426,7 @@
     });
   </script>
   <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
       // Javascript method's body can be found in assets/js/demos.js
       md.initDashboardPageCharts();
 

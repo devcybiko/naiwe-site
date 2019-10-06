@@ -14,7 +14,7 @@ function weeklyErrorCounts() {
         console.log(result)
         let data = JSON.parse(result);
         let weeklyData = PS.sqlToArray(data);
-        $(`#totalWeeksCountDiv`).html(`${data.length}`);
+        $(`.totalWeeksCountDiv`).html(`${data.length}`);
         //PS.barChart('weeklyErrorCountsDiv', weeklyData, { svgHeight: 250, svgWidth: 1000, xLabel: "Week", yLabel: "Total Errors" });
         PS.barChart('miniWeeklyErrorCountsDiv', weeklyData.filter((row, i) => (i >= (weeklyData.length - 5))),
             { barColor: '#0cc', svgHeight: 100, svgWidth: 250, yAxis: false, xAxis: false, margin: { top: 0, right: 0, bottom: 0, left: 0 } });
@@ -48,7 +48,7 @@ function uniqueErrors() {
     jQuery.get(url).then(result => {
         console.log(result)
         let data = JSON.parse(result);
-        $(`#uniqueErrorsCountDiv`).html(`${data.length}`);
+        $(`.uniqueErrorsCountDiv`).html(`${data.length}`);
         PS.tableChart('uniqueErrorsDiv', data, { check: false });
     });
 }
@@ -56,9 +56,9 @@ function uniqueErrors() {
 function uniqueSourceErrors() {
     var url = "/api/naiwelogs/uniqueSourceErrors";
     jQuery.get(url).then(result => {
-        console.log(result)
+        //console.log(result)
         let data = JSON.parse(result);
-        $(`#uniqueSourceErrorsCountDiv`).html(`${data.length}`);
+        $(`.uniqueSourceErrorsCountDiv`).html(`${data.length}`);
         PS.tableChart('uniqueSourceErrorsDiv', data, { check: false });
     });
 }
@@ -66,7 +66,7 @@ function uniqueSourceErrors() {
 function logfileCounts() {
     var url = "/api/naiwelogs/logfileCounts";
     jQuery.get(url).then(result => {
-        console.log(result)
+        //console.log(result)
         let data = JSON.parse(result);
         //$(`#logfileCountsDiv`).html(`${data.length}`);
         let table="<table>";
@@ -82,6 +82,18 @@ function lastUpdate() {
     var url = "/api/mysql/query";
     var data = {
         query: `select DATE_FORMAT(MAX(logtime), "%W %M %e %Y %r") as lasttime from rawlogs`
+    }
+    jQuery.post(url, data).then(result => {
+        console.log(result)
+        let data = JSON.parse(result);
+        $(`#lastUpdateSpan`).text(`Last Update: ${data[0].lasttime}`);
+    });
+}
+
+function purge() {
+    var url = "/api/mysql/query";
+    var data = {
+        query: `DELETE FROM rawlogs where lasttime <  DATE_FORMAT(MAX(logtime), "%W %M %e %Y %r") as lasttime from rawlogs`
     }
     jQuery.post(url, data).then(result => {
         console.log(result)
