@@ -10,6 +10,7 @@ create table if not exists rawlogs (
   logtext VARCHAR(750) UNIQUE NOT NULL,
   logerr VARCHAR(750),
   logtime DATETIME,
+  loglevel VARCHAR(100),
   PRIMARY KEY (id)
   -- UNIQUE KEY `text_key` (`logtext`)
 );
