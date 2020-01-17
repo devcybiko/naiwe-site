@@ -1,6 +1,13 @@
 const mysql = require("mysql2");
 const gls = require("./glsfiles.js");
 
+const theLogLevel = function(s) {
+	if (s.includes("PHP Warning") return "warning";
+	if (s.includes("PHP Notice") return "notice";
+	if (s.includes("PHP Fatal error") return "error";
+	return "none";
+}
+
 const load = function(data, context, callback) {
     let config = this.config;
     let response = "";
@@ -28,15 +35,16 @@ const load = function(data, context, callback) {
                 //console.log(datetime);
                 let logtext = (logFname + ": " + line.trim()).substr(0, 750);
                 let logerr = line.trim();
+		let loglevel = theLogLevel(line);
                 if (line.includes(']')) logerr = line.substring(line.indexOf(']') + 1).trim().substr(0, 750);
-                if (line) rows.push([datetime, logFname, logtext, logerr, srcmodule]);
+                if (line) rows.push([datetime, logFname, logtext, logerr, srcmodule, loglevel]);
             }
             let msg = `${logFname} ${rows.length}`;
             console.log(msg);
             response += "<br>" + msg;
             //console.log(rows);
             //rows.forEach(row => {
-            let sql = "INSERT IGNORE INTO rawlogs (logtime, logname, logtext, logerr, srccode) VALUES ?";
+            let sql = "INSERT IGNORE INTO rawlogs (logtime, logname, logtext, logerr, srccode, loglevel) VALUES ?";
             connection.query(sql, [rows], function (err, rowset) {
                 responses++;
                 //console.log(`${responses}...${fnameCnt}`);
